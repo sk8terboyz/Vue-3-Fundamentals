@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Shopping List App</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <div id="shopping-list">
+      <div class="top">
+        <h1>{{ header || 'Welcome User' }}</h1>
+        <h2>Add new item</h2>
+        <input
+          type="text"
+          class="new-item-input"
+          v-model="newItem"
+          palceholder="Add an Item"
+        />
+        <h4 class="copy--display">{{newItem}}</h4>
+      </div>
+      <div class="current-list">
+        <h3>Current List:</h3>
+        <ul>
+          <li v-for="item in items" :key="item.id">
+            {{ item.count + " " + item.label }}
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script>
+      const shoppingList = Vue.createApp({
+        data() {
+          return {
+            header: "Shopping List App",
+            newItem: "",
+            items: [
+              { id: 1, count: 10, label: "Party Hats" },
+              { id: 2, count: 2, label: "Board Games" },
+              { id: 3, count: 20, label: "Cups" },
+            ],
+          };
+        },
+        addItem() {
+          const input = document.querySelector(".new-item-input");
+          if (
+            input.addEventListener("keypress", function (e) {
+              console.log("hello");
+              if (e.key === "Enter") {
+                items.push({
+                  id: items.length,
+                  count: Math.random(40),
+                  label: input.textContent(),
+                });
+              }
+            })
+          );
+        },
+      }).mount("#shopping-list");
+    </script>
+  </body>
+</html>

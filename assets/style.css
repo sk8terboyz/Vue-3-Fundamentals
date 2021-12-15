@@ -1,0 +1,69 @@
+.top {
+  border: 3px solid black;
+  font-size: 100px;
+}
+
+body {
+  background-color: rgba(161, 159, 159, 0.932);
+  margin: 10%;
+  font-family: Arial;
+}
+
+h1 {
+  font-size: 50px;
+  margin: 10%;
+  color: rgb(211, 230, 128);
+  -webkit-text-stroke: 2px black;
+  text-shadow: 0px 0px 25px rgba(255, 0, 0, 0.57);
+}
+
+h2 {
+  font-size: 35px;
+  float: right;
+  margin: 10px;
+  padding: 5% 10%;
+  text-shadow: 5px 10px 10px rgba(0, 0, 0, 0.57);
+}
+
+h3 {
+  font-size: 40px;
+  font-stretch: expanded;
+  /* margin: 15; */
+  padding: 10px 30px;
+}
+
+h4 {
+  font-size: 35px;
+  float: right;
+}
+
+ul {
+  list-style-type: none;
+  font-family: "Gill Sans";
+}
+
+li {
+  font-size: 25px;
+}
+
+.new-item-input {
+  float: right;
+  position: relative;
+  left: 30rem;
+  top: 10rem;
+  margin: 10px 50px;
+  border: 3px solid #2c0770;
+  width: 250px;
+  height: 25px;
+  font-size: 15px;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.57);
+}
+
+.current-list {
+  border: 3px solid black;
+  border-radius: 15px;
+
+  box-shadow: 0px 5px 50px rgb(255, 255, 255),
+    inset 3em 2em 5em rgba(0, 0, 0, 0.267);
+  background-color: white;
+}
