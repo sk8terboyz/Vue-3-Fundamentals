@@ -11,4 +11,4 @@ I plan to continue working on it as time goes on to see if I can create this wor
 
 *ABOUT THE SHOPPING LIST APP*
 
-I initially created this app to get an understanding of VueJS and how it worked, so I didn't focus to much on making it look the best or anything. Currently its only functionalities are to display hard-coded lists onto the screen and add new items to the list, except that feature doesn't work currently.
+I initially created this app to get an understanding of VueJS and how it worked, so I didn't focus to much on making it look nice. Currently its only functionalities are to display hard-coded lists onto the screen and add new items to the list, except that feature doesn't work currently.
