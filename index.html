@@ -9,6 +9,11 @@
     <div id="shopping-list">
       <div class="top">
         <h1>{{ header || 'Welcome User' }}</h1>
+        <div class="freezer">
+          <button class="freeze--btn slide_in">Freeze</button>
+        </div>
+      </div>
+      <div class="input--container">
         <h2>Add new item</h2>
         <input
           type="text"
@@ -16,6 +21,7 @@
           v-model="newItem"
           palceholder="Add an Item"
         />
+        <button class="input--btn">Add Item</button>
         <h4 class="copy--display">{{newItem}}</h4>
       </div>
       <div class="current-list">
@@ -42,20 +48,12 @@
           };
         },
         addItem() {
-          const input = document.querySelector(".new-item-input");
-          if (
-            input.addEventListener("keypress", function (e) {
-              console.log("hello");
-              if (e.key === "Enter") {
-                items.push({
-                  id: items.length,
-                  count: Math.random(40),
-                  label: input.textContent(),
-                });
-              }
-            })
-          );
+          const inputBtn = document.querySelector('input--btn');
+          inputBtn.addEventListener('click', (e) => {
+            console.log('hello');
+          });
         },
+        
       }).mount("#shopping-list");
     </script>
   </body>
