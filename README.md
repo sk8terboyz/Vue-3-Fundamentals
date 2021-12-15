@@ -10,4 +10,5 @@ To better understand Vue and how it works, I created this shopping list app awhi
 I plan to continue working on it as time goes on to see if I can create this working app without the use of JS files, but obviously JS will still be involved.
 
 *ABOUT THE SHOPPING LIST APP*
+
 I initially created this app to get an understanding of VueJS and how it worked, so I didn't focus to much on making it look the best or anything. Currently its only functionalities are to display hard-coded lists onto the screen and add new items to the list, except that feature doesn't work currently.
